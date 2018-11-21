@@ -927,6 +927,8 @@ void ApexMainTest::testSoundLevelMeter()
 {
 #if !defined(Q_OS_ANDROID)
     TEST_EXCEPTIONS_TRY
+    
+    QSKIP("TODO: enable once dummyslmslave can be build");
 
     QString dummy = QL1S("dummyslmslave");
     QList<SoundLevelMeterPluginCreator *> available =

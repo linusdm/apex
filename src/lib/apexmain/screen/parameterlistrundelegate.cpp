@@ -127,8 +127,6 @@ QVariant ParameterListRunDelegate::Model::headerData(
 
 /* class LabelDelegate : public QItemDelegate
 {
-    Q_OBJECT
-
     public:
         LabelDelegate(QObject *parent = 0);
 

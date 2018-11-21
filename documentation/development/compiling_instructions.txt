@@ -33,6 +33,22 @@ Running
     qmake -qt=5 && make
 should be enough to get you going.
 
+2.1.5. Compilation with cmake (experimental)
+
+Requires cmake to be installed.
+
+Building (out-of-source build):
+> mkdir cmake-build
+> cd cmake-build
+> cmake ..
+> make (or 'cmake --build .')
+
+Testing:
+> cd cmake-build
+> make test (or 'ctest')
+
+Build artifacts are stored in 'bin-cmake/debug' to resemble qmake build.
+
 2.2. Compilation on Windows
 
 If you take the path of least resistance, define a directory layout like the following:
